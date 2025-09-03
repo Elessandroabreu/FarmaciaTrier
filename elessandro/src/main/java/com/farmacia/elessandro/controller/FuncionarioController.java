@@ -39,7 +39,7 @@ public class FuncionarioController {
     public ResponseEntity<Object> getFuncionario(@PathVariable("cdFuncionario") Integer cdFuncionario) {
         Optional<FuncionarioModel> funcionario0 = funcionarioRepository.findById(cdFuncionario);
         if (funcionario0.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Funcionario nao encontrado");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Funcionário nâo encontrado");
         }
         return ResponseEntity.status(HttpStatus.OK).body(funcionario0.get());
     }

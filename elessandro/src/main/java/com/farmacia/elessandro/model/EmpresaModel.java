@@ -16,17 +16,20 @@ public class EmpresaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "cdCliente")
-    private Integer cdCliente;
+    @Column(name = "cdEmpresa")
+    private Integer cdEmpresa;
 
-    @Column(name = "nmCliente")
-    private String nmCliente;
+    @Column(name = "nmEmpresa")
+    private String nmEmpresa;
 
-    @Column(name = "cpfCliente")
-    private String cpfCliente;
+    @Column(name = "cnpjEmpresa")
+    private String cnpjEmpresa;
 
-    @Column(name = "telefoneCliente")
-    private String telefoneCliente;
+    @Column(name = "telefoneEmpresa")
+    private String telefoneEmpresa;
+
+    @Column(name = "enderecoEmpresa")
+    private String enderecoEmpresa;
 
     @Column(name = "emailCliente")
     private String emailCliente;
