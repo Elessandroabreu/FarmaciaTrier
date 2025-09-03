@@ -4,7 +4,7 @@ import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record ProdutosDto(
+public record ProdutoDto(
         @NotBlank(message = "Nao e possivel salvar um produto sem nome")
         String nmProduto,
 
@@ -13,7 +13,7 @@ public record ProdutosDto(
 
         @NotNull(message = "Nao e possivel salvar um produto sem valor")
         @DecimalMin(value = "0.01", message = "Nao e possivel salvar um valor abaixo de 0.01")
-        double vlProduto
+        Double vlProduto
 ) {
 
 }
