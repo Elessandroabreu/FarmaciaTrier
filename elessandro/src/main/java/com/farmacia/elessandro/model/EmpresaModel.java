@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name = "TBCLIENTE")
+@Table(name = "TBEMPRESA")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -32,6 +32,6 @@ public class EmpresaModel {
     private String enderecoEmpresa;
 
     @Column(name = "emailCliente")
-    private String emailCliente;
+    private String emailEmpresa;
 
 }

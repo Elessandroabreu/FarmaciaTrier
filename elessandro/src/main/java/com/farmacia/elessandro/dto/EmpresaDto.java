@@ -15,7 +15,7 @@ public record EmpresaDto(
         @NotBlank(message = "Nao e possivel salvar uma empresa sem telefone")
         String telefoneEmpresa,
 
-        @Email @NotBlank(message = "Nao e possivel salvar uma empresa sem endereco")
+        @NotBlank(message = "Nao e possivel salvar uma empresa sem endereco")
         String enderecoEmpresa,
 
         @Email @NotBlank(message = "Nao e possivel salvar uma empresa sem email")
