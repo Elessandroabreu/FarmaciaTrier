@@ -26,6 +26,5 @@ public record FuncionarioDto(
         String cargoFuncionario,
 
         @NotNull(message = "Nao e possivel salvar um funcionário sem código do cargo")
-        Integer cdCargoFuncionario)
-{
+        Integer cdCargoFuncionario) {
 }

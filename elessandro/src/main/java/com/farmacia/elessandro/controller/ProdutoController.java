@@ -9,7 +9,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -32,7 +31,6 @@ public class ProdutoController {
     public ResponseEntity<List<ProdutoModel>> listar() {
         return ResponseEntity.status(HttpStatus.OK).body(produtoRepository.findAll());
     }
-
 
     @GetMapping("/{cdProduto}")
     public ResponseEntity<Object> getProduto(@PathVariable("cdProduto") Integer cdProduto) {

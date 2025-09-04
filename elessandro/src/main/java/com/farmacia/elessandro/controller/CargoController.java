@@ -9,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
@@ -33,7 +31,6 @@ public class CargoController {
     public ResponseEntity<List<CargoModel>> listar() {
         return ResponseEntity.status(HttpStatus.OK).body(cargoRepository.findAll());
     }
-
 
     @GetMapping("/{cdCargo}")
     public ResponseEntity<Object> getCargo(@PathVariable("cdCargo") Integer cdCargo) {

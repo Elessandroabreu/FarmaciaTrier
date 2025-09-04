@@ -6,12 +6,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Entity
 @Table(name = "TBCLIENTE")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+
 public class ClienteModel {
 
     @Id

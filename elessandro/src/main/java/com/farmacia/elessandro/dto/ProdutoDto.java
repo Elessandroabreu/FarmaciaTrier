@@ -13,7 +13,6 @@ public record ProdutoDto(
 
         @NotNull(message = "Nao e possivel salvar um produto sem valor")
         @DecimalMin(value = "0.01", message = "Nao e possivel salvar um valor abaixo de 0.01")
-        Double vlProduto
-) {
+        Double vlProduto) {
 
 }

@@ -1,9 +1,7 @@
 package com.farmacia.elessandro.dto;
 
-import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 public record EmpresaDto(
         @NotBlank(message = "Nao e possivel salvar uma empresa sem nome")

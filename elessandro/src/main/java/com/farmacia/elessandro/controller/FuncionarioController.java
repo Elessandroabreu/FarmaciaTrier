@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -32,7 +31,6 @@ public class FuncionarioController {
     public ResponseEntity<List<FuncionarioModel>> listar() {
         return ResponseEntity.status(HttpStatus.OK).body(funcionarioRepository.findAll());
     }
-
 
     @GetMapping("/{cdFuncionario}")
     public ResponseEntity<Object> getFuncionario(@PathVariable("cdFuncionario") Integer cdFuncionario) {
