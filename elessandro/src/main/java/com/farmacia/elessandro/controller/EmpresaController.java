@@ -1,10 +1,7 @@
 package com.farmacia.elessandro.controller;
 
-import com.farmacia.elessandro.dto.ClienteDto;
 import com.farmacia.elessandro.dto.EmpresaDto;
-import com.farmacia.elessandro.model.ClienteModel;
 import com.farmacia.elessandro.model.EmpresaModel;
-import com.farmacia.elessandro.repository.ClienteRepository;
 import com.farmacia.elessandro.repository.EmpresaRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;

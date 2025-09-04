@@ -1,6 +1,5 @@
 package com.farmacia.elessandro.controller;
 
-
 import com.farmacia.elessandro.dto.FuncionarioDto;
 import com.farmacia.elessandro.model.FuncionarioModel;
 import com.farmacia.elessandro.repository.FuncionarioRepository;

@@ -1,11 +1,8 @@
 package com.farmacia.elessandro.controller;
 
 import com.farmacia.elessandro.dto.CargoDto;
-import com.farmacia.elessandro.dto.ClienteDto;
 import com.farmacia.elessandro.model.CargoModel;
-import com.farmacia.elessandro.model.ClienteModel;
 import com.farmacia.elessandro.repository.CargoRepository;
-import com.farmacia.elessandro.repository.ClienteRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
