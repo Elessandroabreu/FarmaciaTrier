@@ -16,6 +16,7 @@ public class EmpresaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "cdEmpresa")
     private Integer cdEmpresa;
 

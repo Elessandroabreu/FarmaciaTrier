@@ -16,6 +16,7 @@ public class FuncionarioModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "cdFuncionario")
     private Integer cdFuncionario;
 

@@ -15,6 +15,7 @@ public class CargoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "cdCargo")
     private Integer cdCargo;
 

@@ -16,6 +16,7 @@ public class ClienteModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "cdCliente")
     private Integer cdCliente;
 

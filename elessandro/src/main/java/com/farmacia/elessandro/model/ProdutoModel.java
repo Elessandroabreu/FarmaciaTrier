@@ -26,6 +26,7 @@ public class ProdutoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "cdProduto")
     private Integer cdProduto;
 
